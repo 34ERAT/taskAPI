@@ -17,6 +17,8 @@ model Task {
   id          String   @id @default(uuid()) @db.Uuid
   Title       String   @db.VarChar(50)
   description String   @db.Text
+  isCompleted Boolean  @db.Boolean
+  isDeleted   Boolean  @default(false) @db.Boolean
   createdAt   DateTime @default(now()) @db.Timestamptz()
   updatedAt   DateTime @updatedAt
 }
