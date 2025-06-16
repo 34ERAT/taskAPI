@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
+    "dev": " nodemon ./src/index.ts",
     "prod": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "philip kanuti",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@types/express": "^5.0.3",
     "nodemon": "^3.1.10",
-    "prisma": "^6.9.0"
+    "prisma": "^6.9.0",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@prisma/client": "^6.9.0",
