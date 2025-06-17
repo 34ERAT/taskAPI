@@ -17,7 +17,6 @@ export const getTasks = asyncHandler(async (_req: Request, res: Response) => {
 });
 
 export const newTask = asyncHandler(async (req: Request, res: Response) => {
-  // const { Title, description, isCompleted }: Task = req.body;
   const newtask: Task = req.body;
   const task = await create(newtask);
   if (task) res.status(201).json(task);
